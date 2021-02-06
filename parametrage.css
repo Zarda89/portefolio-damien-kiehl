@@ -1,0 +1,430 @@
+#navbar{
+    text-align: right;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 20px 0;
+    background-color: black;
+    margin: 0;
+}
+
+h2{
+    margin: 0%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#alligner{
+    display: inline;
+    padding-right: 10px;
+}
+
+
+#texte{
+    
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(245, 245, 245);
+	font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 100px;
+
+
+}
+
+a{
+    color: rgb(93 177 223);
+}
+a:hover{
+    color:rgb(245, 245, 245);
+}
+
+
+
+#container{
+    width: 100%;
+    height: 93vh;
+}
+
+#img {
+    height: 100%;
+    background-image: url("195638.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#imgc {
+    background-image: url("cropped-winohwinnerchickendinner_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+#textep{
+    
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(0, 0, 0);
+	font-size: 1.2em;
+    text-align: justify;
+
+
+
+}
+
+.flotte {
+    float:left;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+    padding-right: 19px;
+    margin-right: 20px;
+
+    
+    }
+
+
+
+
+
+#containerp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.centertxt{
+    text-align: center;
+}
+.flotteci{
+    display: inline-block;
+    margin: 10px;
+    padding: 0 40px;
+    text-align: center;
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 1.2em;
+    
+}
+
+.borderraduis{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex: auto;
+    background-color: rgba(0, 0, 0, 0.075) ;
+    padding: 3px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+
+    
+}
+
+.lignehorizon{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.flotteco{
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 33px;
+    padding: 53px 10px;
+    text-align: center;
+    font-family: 'Hachi Maru Pop', cursive;
+    color:black;
+    font-size: 1em;
+    border: 1px solid black;
+    width: 322px;
+    border-radius: 5%;
+    background-color: white;
+    padding-top: 11px;
+    
+
+}
+
+#containercc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#containerccc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#containerc{
+    width: 100%;
+    height: 93vh;
+
+}
+
+#textec{
+    
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(255, 255, 255);
+	font-size: 1.2em;
+    text-align: center;
+}
+
+
+
+
+/*timeline*/
+.timeline{
+    background-color: rgb(106 183 210);
+    position: relative;
+    min-height: 811px;
+    overflow: hidden;
+
+}
+
+
+.timeline-article:before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 3px;
+    height: 100%;
+    left: 50vw;
+}
+
+.timeline-article{
+  
+    margin: 0 74px;
+
+}
+
+
+
+.timeline-article-detail{
+    display: inline-block;
+    margin-bottom: 30px;
+
+
+}
+.timeline-article:first-child .timeline-article-detail{
+    margin-top: 50px ;
+}
+.timeline-article-detail-date, .timeline-article-detail-marker, .timeline-article-detail-description{
+    float: left;
+}
+
+.timeline-article-detail-date{
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin-left: 815px;
+    margin-top: 18px;
+    margin-right: 7px;
+
+    
+
+
+}
+
+.timeline-article-detail-marker{
+    position: relative;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: rgb(197, 197, 197);
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 18px;
+}
+.timeline-article-detail-description:before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 75px;
+    height: 2px;
+    margin-top: 33px;
+    margin-left: -75px;
+}
+
+.timeline-article-detail-description{
+    color: black;
+    width: 500px;
+    background-color: rgb(209, 208, 208);
+    border-radius: 20px;
+    margin-left: 60px;
+    
+
+
+}
+/* timeline gauche*/
+
+.timeline-articleG:before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 3px;
+    height: 100%;
+    left: 50vw;
+}
+
+.timeline-articleG{
+  
+    margin: 0 74px;
+
+}
+
+
+
+.timeline-article-detailG{
+    display: inline-block;
+    margin-bottom: 30px;
+
+
+}
+.timeline-articleG:first-child .timeline-article-detailG{
+    margin-top: 50px ;
+}
+.timeline-article-detail-dateG, .timeline-article-detail-markerG, .timeline-article-detail-descriptionG{
+    float: right;
+}
+
+.timeline-article-detail-dateG{
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-right: 10px;
+
+    
+
+
+}
+
+.timeline-article-detail-markerG{
+    position: relative;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: rgb(209, 208, 208);
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 18px;
+}
+.timeline-article-detail-descriptionG:before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 75px;
+    height: 2px;
+    margin-top: 33px;
+    margin-left: 499px;
+}
+
+.timeline-article-detail-descriptionG{
+    color: black;
+    width: 500px;
+    background-color: rgb(209, 208, 208);
+    border-radius: 20px;
+    margin-left: 310px;
+    margin-right: 63px;
+    
+
+
+}
+#textetimeline{
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+}
+
+/*projet*/
+
+#imgpr {
+    background-image: url("cropped-winohwinnerchickendinner_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+.flottepr{
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 33px;
+
+    text-align:center;
+    font-family: 'Hachi Maru Pop', cursive;
+    color:black;
+    font-size: 1em;
+    border: 1px solid black;
+    width: 600px;
+    border-radius:1%;
+    background-color: white;
+    padding-top: 11px;
+    
+
+}
+
+#containerppr{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: center;
+}
+#containerpppr{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: center;
+}
+#containerppppr{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+
+#containerpr{
+    width: 100%;
+    height: 93vh;
+
+}
+
+#textepr{
+    
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(255, 255, 255);
+	font-size: 1.2em;
+    text-align: center;
+}
