@@ -50,7 +50,7 @@ a:hover{
 }
 
 #img {
-    height: 90%;
+    height: 100%;
     background-image: url("195638.jpg");
     background-size: cover;
     background-repeat: no-repeat;
