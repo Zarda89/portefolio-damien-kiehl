@@ -449,3 +449,11 @@ a:hover{
 
 
 }
+#texteentete{
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(245, 245, 245);
+	font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 100px;
+    color: black;
+}
