@@ -457,3 +457,7 @@ a:hover{
     margin-bottom: 100px;
     color: black;
 }
+
+.contactLink {
+    color: yellow;
+}
