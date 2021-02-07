@@ -428,3 +428,24 @@ a:hover{
 	font-size: 1.2em;
     text-align: center;
 }
+/*contact*/
+
+#fondc{
+    background-color: rgb(106 183 210);
+    position: relative;
+    min-height: 811px;
+    overflow: hidden;    
+    width: 100%;
+    height: 93vh;
+
+}
+#textec{
+    
+    font-family: 'Hachi Maru Pop', cursive;
+    color:rgb(245, 245, 245);
+	font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 100px;
+
+
+}
