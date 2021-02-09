@@ -1,23 +1,17 @@
-#navbar{
-    text-align: right;
-    font-family: 'Hachi Maru Pop', cursive;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    padding: 20px 0;
-    background-color: black;
-    margin: 0;
-}
 
-h2{
-    margin: 0%;
-}
 
 body{
+    font-family: arial, sans-serif;
     height: 100vh;
     width: 100vw;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
+    
+}
 
+h2{
+    margin: 0%;
 }
 
 #alligner{
@@ -25,10 +19,27 @@ body{
     padding-right: 10px;
 }
 
+.overflowYDefault
+{
+    overflow-y: visible !important;
+}
+.containerNavbar
+{
+  z-index: 3;
+    height: 60px;
+}
+
+#navbar{
+    text-align: right;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 20px 0;
+    background-color: black;
+    margin: 0;
+}
 
 #texte{
     
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(245, 245, 245);
 	font-size: 1.2em;
     text-align: center;
@@ -48,7 +59,6 @@ a:hover{
 
 #container{
     width: 100%;
-    height: calc(100% - 64px);
 }
 
 #img {
@@ -82,10 +92,10 @@ a:hover{
 
 #textep{
     
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(0, 0, 0);
 	font-size: 1.2em;
     text-align: justify;
+    max-width: 100%;
 
 
 
@@ -103,13 +113,23 @@ a:hover{
     }
 
 
+.containerContentUnscrollable
+{
+  height: calc(100% - 60px);
+  z-index: 2;
+}
 
-
-
+.containerContentScrollable
+{
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    z-index: 2;
+}
 #containerp{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -121,7 +141,6 @@ a:hover{
     margin: 10px;
     padding: 0 40px;
     text-align: center;
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(0, 0, 0);
     font-size: 1.2em;
     
@@ -153,7 +172,6 @@ a:hover{
     margin: 33px;
     padding: 53px 10px;
     text-align: center;
-    font-family: 'Hachi Maru Pop', cursive;
     color:black;
     font-size: 1em;
     border: 1px solid black;
@@ -165,10 +183,28 @@ a:hover{
 
 }
 
-#containercc{
+.containercc{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 1194px)
+{
+  .containercc{
+    flex-direction: column;
+  }
+  .flotteco
+  {
+    height: fit-content;
+  }
+}
+
+@media (max-width : 350px)
+{
+  .flotteco {
+    width: auto;
+    border-radius: 0;
+  }
 }
 #containerccc{
     display: flex;
@@ -179,13 +215,11 @@ a:hover{
 
 #containerc{
     width: 100%;
-    height: 93vh;
+    height: 100%;
 
 }
 
 #textec{
-    
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(255, 255, 255);
 	font-size: 1.2em;
     text-align: center;
@@ -237,7 +271,6 @@ a:hover{
 .timeline-article-detail-date{
     color: rgb(0, 0, 0);
     font-size: 1.3em;
-    font-family: 'Hachi Maru Pop', cursive;
     margin-left: 815px;
     margin-top: 18px;
     margin-right: 7px;
@@ -312,7 +345,6 @@ a:hover{
 .timeline-article-detail-dateG{
     color: rgb(0, 0, 0);
     font-size: 1.3em;
-    font-family: 'Hachi Maru Pop', cursive;
     margin-left: 10px;
     margin-top: 18px;
     margin-right: 10px;
@@ -354,7 +386,6 @@ a:hover{
 
 }
 #textetimeline{
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(0, 0, 0);
     font-size: 1.2em;
     text-align: center;
@@ -383,9 +414,8 @@ a:hover{
     flex-direction: column;
     align-items: center;
     margin: 33px;
-
+    max-width: 600px;
     text-align:center;
-    font-family: 'Hachi Maru Pop', cursive;
     color:black;
     font-size: 1em;
     border: 1px solid black;
@@ -393,39 +423,43 @@ a:hover{
     border-radius:1%;
     background-color: white;
     padding-top: 11px;
+}
+
+.flottepr > img
+{
+  width: 100%;
+}
+
+.width-100{
+  width: 100%;
+}
+.containerppr{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+@media (max-width : 1018px)
+{
+  .containerppr {
+    flex-direction: column;
+  }
+  .flottepr {
+    width: 94%;
+    height: fit-content;
+    padding-bottom: 11px;
     
-
-}
-
-#containerppr{
-    display: flex;
-    justify-content:space-evenly;
-    width: 100%;
-    align-items: center;
-}
-#containerpppr{
-    display: flex;
-    justify-content:space-evenly;
-    width: 100%;
-    align-items: center;
-}
-#containerppppr{
-    display: flex;
-    justify-content:space-evenly;
-    width: 100%;
-    align-items: center;
+  }
 }
 
 
 #containerpr{
     width: 100%;
-    height: 93vh;
-
 }
 
 #textepr{
     
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(255, 255, 255);
 	font-size: 1.2em;
     text-align: center;
@@ -443,7 +477,6 @@ a:hover{
 }
 #textec{
     
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(245, 245, 245);
 	font-size: 1.2em;
     text-align: center;
@@ -452,7 +485,6 @@ a:hover{
 
 }
 #texteentete{
-    font-family: 'Hachi Maru Pop', cursive;
     color:rgb(245, 245, 245);
 	font-size: 1.2em;
     text-align: center;
@@ -462,4 +494,30 @@ a:hover{
 
 .contactLink {
     color: yellow;
+}
+
+#presImageContainer{
+  display: flex;
+}
+@media (max-width: 827px)
+{
+  #presImageContainer{
+    flex-direction: column;
+  }
+  #presImage{
+    margin: auto;
+    padding: inherit;
+    border: none;
+    
+  }
+  #presImage > img{
+    max-width: 100%;
+  }
+  .presText{
+    justify-content: center;
+  }
+}
+@media (max-width: 351px)
+{
+
 }
