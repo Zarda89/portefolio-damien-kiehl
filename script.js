@@ -7,7 +7,6 @@ function openNavbar()
   let close = document.getElementById("icon-menu-close");
   close.classList.add("show");
   close.classList.remove("hide");
-
   let navbar = document.getElementById("navbar");
   navbar.classList.add("display-flex");
 }
