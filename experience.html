@@ -5,82 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="parametrage.css">
+    <script type="text/javascript" src="./script.js"></script>
 </head>
-<body class="overflowYDefault">
-    <div class="containerNavbar">
-        <ul id="navbar">
-            <li id="alligner"><a href="index.html">accueil</a></li>
-            <li id="alligner"><a href="présentation.html">présentation</a></li>
-            <li id="alligner"><a href="Compétence.html">Compétence</a></li>
-            <li id="alligner"><a href="experience.html">experience</a></li>
-            <li id="alligner"><a href="projet.html">projet</a></li>
-            <li id="alligner"><a href="formulaire de contact.html">contact</a></li>
-        </ul>
-    </div> 
-    
-    
-
-    <div class="timeline ">
-        <h1 id="textetimeline">Experience</h1>
-        <div class="timeline-article">
-            <div class="timeline-article-detail">
-                <div class="timeline-article-detail-date">2004</div>
-                <div  class="timeline-article-detail-marker"></div>
-                <div class="timeline-article-detail-description">
-                    <h2 id="textetimeline">titre</h2>
-                    <p id="textetimeline">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptas delectus modi ad officia non doloremque eligendi, et, 
-                        soluta quia tenetur odit distinctio cumque est, impedit deleniti vero illum aliquid?</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-articleG">
-            <div class="timeline-article-detailG">
-                <div class="timeline-article-detail-dateG">2021</div>
-                <div class="timeline-article-detail-markerG"></div>
-                <div class="timeline-article-detail-descriptionG">
-                    <h2 id="textetimeline">titre</h2>
-                    <p id="textetimeline">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptas delectus modi ad officia non doloremque eligendi, et, 
-                        soluta quia tenetur odit distinctio cumque est, impedit deleniti vero illum aliquid?</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-article">
-            <div class="timeline-article-detail">
-                <div class="timeline-article-detail-date">2009</div>
-                <div class="timeline-article-detail-marker"></div>
-                <div class="timeline-article-detail-description">
-                    <h2 id="textetimeline">vendeur</h2>
-                    <p id="textetimeline">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptas delectus modi ad officia non doloremque eligendi, et, 
-                        soluta quia tenetur odit distinctio cumque est, impedit deleniti vero illum aliquid?</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-articleG">
-            <div class="timeline-article-detailG">
-                <div class="timeline-article-detail-dateG">2003 a 2009</div>
-                <div class="timeline-article-detail-markerG"></div>
-                <div class="timeline-article-detail-descriptionG">
-                    <h2 id="textetimeline">plombier chauffagiste</h2>
-                    <p id="textetimeline">J'ai travailler 7ans en tant que plombier chauffagiste dans divers entreprise de l'artisan a la grosse entreprise 
-                                         </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-article">
-            <div class="timeline-article-detail">
-                <div class="timeline-article-detail-date">2004</div>
-                <div class="timeline-article-detail-marker"></div>
-                <div class="timeline-article-detail-description">
-                    <h2 id="textetimeline">BEP Plomberie Chauffage</h2>
-                    <p id="textetimeline">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptas delectus modi ad officia non doloremque eligendi, et, 
-                        soluta quia tenetur odit distinctio cumque est, impedit deleniti vero illum aliquid?</p>
-                </div>
-            </div>
-        </div>
+<body>
+  <div class="containerNavbar">
+    <div id="icon-menu-container">
+      <img id="icon-menu-open" src="open.png" class="" onclick="openNavbar()" />
+      <img id="icon-menu-close" class="hide" src="close.png" onclick="closeNavbar()"/>
     </div>
+      <ul id="navbar">
+          <li id="alligner"><a href="index.html">accueil</a></li>
+          <li id="alligner"><a href="présentation.html">présentation</a></li>
+          <li id="alligner"><a href="Compétence.html">Compétence</a></li>
+          <li id="alligner"><a href="experience.html">experience</a></li>
+          <li id="alligner"><a href="projet.html">projet</a></li>
+          <li id="alligner"><a href="formulaire de contact.html">contact</a></li>
+      </ul>
+  </div>   
+    
+    <section id=timeline class="containerContentScrollable">
+      <h1>COMPÉTENCES EN INFORMATIQUE</h1>
+      <p class="leader">Sur cette page vous pourrez consulter ou télécharger de mes différentes Projet informatique</p>
+      <div class="demo-card-wrapper">
+        <div class="demo-card demo-card--step1">
+          <div id="head-step1" class="head">
+            <div class="number-box">
+              <span>2019-2021</span>
+            </div>
+            <h2>GMSI</h2>
+          </div>
+          <div class="body">
+            <p>j'ai intégrer le CESI d'ARRAS pour 2 ans d'alternance en GMSI pour la partis entreprise je travail chez maisons et citée sur le sites de BRUAY LA BUISIERE</p>
+          </div>
+        </div>
+    
+        <div class="demo-card demo-card--step2">
+          <div id="head-step2" class="head">
+            <div class="number-box">
+              <span>2018-2019</span>
+            </div>
+            <h2> TAI</h2>
+          </div>
+          <div class="body">
+            <p>J'ai suivie la formation TAI technicien d'assistance en informatique a l'AFPA de LOMME qui sais terminer avec l'obtention du titre proféssionnel technicien d'assistance en informatique  </p>
+          </div>
+        </div>
+    
+        <div class="demo-card demo-card--step3">
+          <div id="head-step3" class="head">
+            <div class="number-box number-box-large">
+              <span>2009-2015</span>
+            </div>
+            <h2>Vendeur et Magasignier</h2>
+          </div>
+          <div class="body">
+            <p>J'ai été vendeur pendant 2 ans et 2 ans en tant que Magasignier</p>
+          </div>
+        </div>
+    
+        <div class="demo-card demo-card--step4">
+          <div id="head-step4" class="head">
+            <div class="number-box number-box-large">
+              <span>2003-2009</span>
+            </div>
+            <h2>plombier chauffagiste</h2>
+          </div>
+          <div class="body">
+            <p>J'ai travailler 7ans en tant que plombier chauffagiste dans divers entreprise de l'artisan a la grosse entreprise</p>
+          </div>
+        </div>
+    
+        <div class="demo-card demo-card--step5">
+          <div id="head-step5" class="head">
+            <div class="number-box">
+              <span>2004</span>
+            </div>
+            <h2>BEP Plomberie Chauffage</h2>
+          </div>
+          <div class="body">
+            <p>obtention de mon BEP équipement et énergie en juiller 2004 au lycée Joseph Fourrier a Auxerre</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 </body>
 </html>

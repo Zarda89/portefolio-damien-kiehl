@@ -1,83 +1,56 @@
+
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>formulaire</title>
-	<link rel="stylesheet" href="parametrage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortefolioDamienKIEHL</title>
+    <link rel="stylesheet" href="parametrage.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="./mail.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </head>
-
-<div class="containerNavbar">
-	<ul id="navbar">
-		<li id="alligner"><a href="index.html">accueil</a></li>
-		<li id="alligner"><a href="présentation.html">présentation</a></li>
-		<li id="alligner"><a href="Compétence.html">Compétence</a></li>
-		<li id="alligner"><a href="experience.html">experience</a></li>
-		<li id="alligner"><a href="projet.html">projet</a></li>
-		<li id="alligner"><a href="formulaire de contact.html">contact</a></li>
-	</ul>
-</div>   
-
-
-<div id="fondc" >
-	<div id="texteentete">
-		<h1>contact</h1>
-		<a class="contactLink" href="damienkiehl89@gmail.com">damienkiehl89@gmail.com</a><br>
-		<a class="contactLink" href="damien.kiehl@viacesi.fr">damien.kiehl@viacesi.fr</a><br>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-			 Optio illum ex quia accusamus obcaecati nemo placeat adipisci? Dicta quos fuga maxime,
-			 inventore odio mollitia placeat, recusandae, eum animi ducimus minima?</p>
-	</div>
-	<form id="textec">
-		<div>
-			<label for="nom">nom</label>
-			<input type="texte" name="nom" placeholder="mettre votre nom">
-			<label for="prénom">prénom</label>
-			<input type="texte" name="prénom" placeholder="mettre votre prénom">
-		</div>
-
-		<div>
-			<label for="adresse mail">adresse mail</label>
-			<input type="texte" name="adresse mail" required="">
-		</div>
-
-		<div>
-			<input type="submit" name="envoyer">
-		</div>
-
-	
-
-	
-
-	</form>
-
-</div>
+<body>
+    <div class="containerNavbar">
+      <div id="icon-menu-container">
+        <img id="icon-menu-open" src="open.png" class="" onclick="openNavbar()" />
+        <img id="icon-menu-close" class="hide" src="close.png" onclick="closeNavbar()"/>
+      </div>
+        <ul id="navbar">
+            <li id="alligner"><a href="index.html">accueil</a></li>
+            <li id="alligner"><a href="présentation.html">présentation</a></li>
+            <li id="alligner"><a href="Compétence.html">Compétence</a></li>
+            <li id="alligner"><a href="experience.html">experience</a></li>
+            <li id="alligner"><a href="projet.html">projet</a></li>
+            <li id="alligner"><a href="formulaire de contact.html">contact</a></li>
+        </ul>
+    </div>   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div id="containerContact" class="width-100 containerContentUnscrollable" >
+        <h1 id="titleForm" class="margin-0 padding-0">Formulaire de contact</h1>
+        <div id="contactform">
+          <fieldset class="fieldsetFormCOntact">
+            <input class="inputFormContact" type="text" placeholder="Votre nom*" id="NameForm"  autofocus value="" />
+          </fieldset>
+          <fieldset class="fieldsetFormCOntact">
+            <input class="inputFormContact" type="email" placeholder="Votre email*" id="EMailForm" value=""  />
+          </fieldset>
+          <fieldset class="fieldsetFormCOntact">
+            <input class="inputFormContact" type="tel" placeholder="Votre numéro de telephone" id="PhoneNumberForm" value="" />
+          </fieldset>
+          <fieldset class="fieldsetFormCOntact">
+            <textarea id="textareaContact" placeholder="Votre message..."  ></textarea>
+          </fieldset>
+          <fieldset class="fieldsetFormCOntact" id="containerButtonForm">
+            <button id="buttonFormContact"  class="inputFormContact" name="submit" type="submit" id="contactSubmit" data-submit="...Sending"  onclick="sendEmail()">Envoyer</button>
+            si vous preferez utiliser votre logiciel de mail, cliquez <span onclick="openMail()">ici</span>
+          </fieldset>
+        </div>
+        <h5 id="noteForm" >mon email: damienkiehl89@gmail.com</h5>
+        <h5 id="noteForm" >Vous pouvez également me contacter par message privé sur <a href="linkedin">linkedin</a></h5>
+    </div>
 
 </body>
-
 </html>
