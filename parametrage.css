@@ -741,11 +741,11 @@ a:hover{
   top: 0;
   bottom: 0;
   left: 50%;
-  border-left: 1px solid rgba(191, 191, 191, 0.4);
+  border-left: 1px solid #000000;
 }
 @media (min-width: 1000px) {
   #timeline .demo-card-wrapper::after {
-    border-left: 1px solid #bdbdbd;
+    border-left: 1px solid #000000;
  }
 }
 #timeline .demo-card {
