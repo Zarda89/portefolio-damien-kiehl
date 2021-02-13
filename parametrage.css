@@ -663,7 +663,7 @@ a:hover{
 /*timeline*/
 
 @media (min-width: 1000px) {
-  #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
+  #timeline .timeline-card:nth-child(odd) .head::after, #timeline .timeline-card:nth-child(even) .head::after {
     position: absolute;
     content: "";
     width: 0;
@@ -671,7 +671,7 @@ a:hover{
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
  }
-  #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
+  #timeline .timeline-card:nth-child(odd) .head::before, #timeline .timeline-card:nth-child(even) .head::before {
     position: absolute;
     content: "";
     width: 9px;
@@ -681,22 +681,22 @@ a:hover{
     box-shadow: 0px 0px 2px 8px #f7f7f7;
  }
 }
-.demo-card:nth-child(1) {
+.timeline-card:nth-child(1) {
   order: 1;
 }
-.demo-card:nth-child(2) {
+.timeline-card:nth-child(2) {
   order: 4;
 }
-.demo-card:nth-child(3) {
+.timeline-card:nth-child(3) {
   order: 2;
 }
-.demo-card:nth-child(4) {
+.timeline-card:nth-child(4) {
   order: 5;
 }
-.demo-card:nth-child(5) {
+.timeline-card:nth-child(5) {
   order: 3;
 }
-.demo-card:nth-child(6) {
+.timeline-card:nth-child(6) {
   order: 6;
 }
 * {
@@ -721,12 +721,12 @@ a:hover{
   margin: auto;
   margin-bottom: 45px;
 }
-#timeline .demo-card-wrapper {
+#timeline .timeline-card-wrapper {
   position: relative;
   margin: auto;
 }
 @media (min-width: 1000px) {
-  #timeline .demo-card-wrapper {
+  #timeline .timeline-card-wrapper {
     display: flex;
     flex-flow: column wrap;
     width: 1170px;
@@ -734,7 +734,7 @@ a:hover{
     margin: 0 auto;
  }
 }
-#timeline .demo-card-wrapper::after {
+#timeline .timeline-card-wrapper::after {
   z-index: 1;
   content: "";
   position: absolute;
@@ -744,11 +744,11 @@ a:hover{
   border-left: 1px solid #000000;
 }
 @media (min-width: 1000px) {
-  #timeline .demo-card-wrapper::after {
+  #timeline .timeline-card-wrapper::after {
     border-left: 1px solid #000000;
  }
 }
-#timeline .demo-card {
+#timeline .timeline-card {
   position: relative;
   display: block;
   margin: 10px auto 80px;
@@ -756,57 +756,57 @@ a:hover{
   z-index: 2;
 }
 @media (min-width: 480px) {
-  #timeline .demo-card {
+  #timeline .timeline-card {
     max-width: 60%;
  }
 }
 @media (min-width: 720px) {
-  #timeline .demo-card {
+  #timeline .timeline-card {
     max-width: 40%;
  }
 }
 @media (min-width: 1000px) {
-  #timeline .demo-card {
+  #timeline .timeline-card {
     max-width: 450px;
     height: 400px;
     margin: 90px;
     margin-top: 45px;
     margin-bottom: 45px;
  }
-  #timeline .demo-card:nth-child(odd) {
+  #timeline .timeline-card:nth-child(odd) {
     margin-right: 45px;
  }
-  #timeline .demo-card:nth-child(odd) .head::after {
+  #timeline .timeline-card:nth-child(odd) .head::after {
     border-left-width: 15px;
     border-left-style: solid;
     left: 100%;
  }
-  #timeline .demo-card:nth-child(odd) .head::before {
+  #timeline .timeline-card:nth-child(odd) .head::before {
     left: 491.5px;
  }
-  #timeline .demo-card:nth-child(even) {
+  #timeline .timeline-card:nth-child(even) {
     margin-left: 45px;
  }
-  #timeline .demo-card:nth-child(even) .head::after {
+  #timeline .timeline-card:nth-child(even) .head::after {
     border-right-width: 15px;
     border-right-style: solid;
     right: 100%;
  }
-  #timeline .demo-card:nth-child(even) .head::before {
+  #timeline .timeline-card:nth-child(even) .head::before {
     right: 489.5px;
  }
-  #timeline .demo-card:nth-child(2) {
+  #timeline .timeline-card:nth-child(2) {
     margin-top: 180px;
  }
 }
-#timeline .demo-card .head {
+#timeline .timeline-card .head {
   position: relative;
   display: flex;
   align-items: center;
   color: #fff;
   font-weight: 400;
 }
-#timeline .demo-card .head .number-box {
+#timeline .timeline-card .head .number-box {
   display: inline;
   float: left;
   margin: 15px;
@@ -816,7 +816,7 @@ a:hover{
   font-weight: 600;
   background: rgba(0, 0, 0, 0.17);
 }
-#timeline .demo-card .head h2 {
+#timeline .timeline-card .head h2 {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: inherit;
@@ -826,22 +826,22 @@ a:hover{
   line-height: 1rem;
 }
 @media (min-width: 480px) {
-  #timeline .demo-card .head h2 {
+  #timeline .timeline-card .head h2 {
     font-size: 165%;
     line-height: 1.6rem;
  }
 }
-#timeline .demo-card .head h2 span {
+#timeline .timeline-card .head h2 span {
   display: block;
   font-size: 0.6rem;
   margin: 0;
 }
 @media (min-width: 480px) {
-  #timeline .demo-card .head h2 span {
+  #timeline .timeline-card .head h2 span {
     font-size: 0.8rem;
  }
 }
-#timeline .demo-card .body {
+#timeline .timeline-card .body {
   background: #fff;
   border: 1px solid rgba(191, 191, 191, 0.4);
   border-top: 0;
@@ -849,59 +849,59 @@ a:hover{
   box-shadow: 0px 1px 22px 4px rgb(0 0 0 / 7%);
 }
 
-#timeline .demo-card .body p {
+#timeline .timeline-card .body p {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 15px;
 }
-#timeline .demo-card .body img {
+#timeline .timeline-card .body img {
   display: block;
   width: 100%;
 }
-#timeline .demo-card--step1 {
+#timeline .timeline-card--step1 {
   background-color: #f7f7f7;
 }
-#timeline .demo-card--step1 .head::after {
+#timeline .timeline-card--step1 .head::after {
   border-color: #46b8e9;
 }
 #head-step1{
   background-color: #46b8e9;
 }
 
-#timeline .demo-card--step2 {
+#timeline .timeline-card--step2 {
   background-color: #f7f7f7;
 }
-#timeline .demo-card--step2 .head::after {
+#timeline .timeline-card--step2 .head::after {
   border-color: #3ee9d1;
 }
 #head-step2{
   background-color: #3ee9d1;
 }
 
-#timeline .demo-card--step3 {
+#timeline .timeline-card--step3 {
   background-color: #f7f7f7;
 }
-#timeline .demo-card--step3 .head::after {
+#timeline .timeline-card--step3 .head::after {
   border-color: #ce43eb;
 }
 #head-step3{
   background-color: #ce43eb;
 }
 
-#timeline .demo-card--step4 {
+#timeline .timeline-card--step4 {
   background-color: #f7f7f7;
 }
-#timeline .demo-card--step4 .head::after {
+#timeline .timeline-card--step4 .head::after {
   border-color: #4d92eb;
 }
 #head-step4{
   background-color: #4d92eb;
 }
 
-#timeline .demo-card--step5 {
+#timeline .timeline-card--step5 {
   background-color: #f7f7f7;
 }
-#timeline .demo-card--step5 .head::after {
+#timeline .timeline-card--step5 .head::after {
   border-color: #46b8e9;
 }
 #head-step5{
