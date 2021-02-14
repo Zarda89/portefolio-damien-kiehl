@@ -599,6 +599,8 @@ a:hover{
   margin: 0;
   padding: 0;
   border: none;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 25px;
 }
 .inputFormContact{

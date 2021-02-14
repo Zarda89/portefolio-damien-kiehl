@@ -33,16 +33,20 @@
         <h1 id="titleForm" class="margin-0 padding-0">Formulaire de contact</h1>
         <div id="contactform">
           <fieldset class="fieldsetFormCOntact">
-            <input class="inputFormContact" type="text" placeholder="Votre nom*" id="NameForm"  autofocus required />
+            <label>Nom*</label>
+            <input class="inputFormContact" type="text" placeholder="Votre nom" id="NameForm"  autofocus required />
           </fieldset>
           <fieldset class="fieldsetFormCOntact">
-            <input class="inputFormContact" type="email" placeholder="Votre email*" id="EMailForm"   required />
+            <label>Email*</label>
+            <input class="inputFormContact" type="email" placeholder="Votre email" id="EMailForm"   required />
           </fieldset>
           <fieldset class="fieldsetFormCOntact">
+            <label>Telephone</label>
             <input class="inputFormContact" type="tel" placeholder="Votre numéro de telephone" id="PhoneNumberForm" />
           </fieldset>
           <fieldset class="fieldsetFormCOntact">
-            <textarea id="textareaContact" placeholder="Votre message*" required ></textarea>
+            <label>Votre message*</label>
+            <textarea id="textareaContact" placeholder="Ecrivez votre message ici" required ></textarea>
           </fieldset>
           <fieldset class="fieldsetFormCOntact" id="containerButtonForm">
             <button id="buttonFormContact"  class="inputFormContact" name="submit" type="submit" id="contactSubmit" data-submit="...Sending"  onclick="sendEmail()">Envoyer</button>
